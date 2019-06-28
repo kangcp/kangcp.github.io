@@ -94,23 +94,21 @@
         </div>
         <div class="post-toc" id="post-toc">
     <strong class="post-toc-title">目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#audio-quality"><span class="toc-text">Audio Quality</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#数据说明"><span class="toc-text">数据说明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#模型说明"><span class="toc-text">模型说明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Audio-Quality"><span class="toc-text">Audio Quality</span></a></li></ol>
     <div class="back-to-top" id="back-to-top">
         <a href="javascript:void(0);">回到顶部</a>
     </div>
 </div>
         <div class="post-content">
-            <ul>
-<li><strong>数据说明</strong><ul>
-<li>训练数据集为8h</li>
+            <h2 id="数据说明"><a href="#数据说明" class="headerlink" title="数据说明"></a>数据说明</h2><hr>
+<ul>
+<li><strong>训练数据集为8h</strong></li>
 </ul>
-</li>
-<li><strong>模型说明：</strong><ul>
+<h2 id="模型说明"><a href="#模型说明" class="headerlink" title="模型说明"></a>模型说明</h2><hr>
+<ul>
 <li>DNN：baseline，4层全连接</li>
-<li>Attention+GRU： 一个前馈深度神经网络模型</li>
-<li>Transformer-X: 基于Transformer的Seq2Seq模型，该模型相对于原始Transformer模型，在position encoding、训练方式、loss设计上做了大量改进。</li>
-</ul>
-</li>
+<li>Attention+GRU： 一个基于Self-Attention的前馈深度神经网络模型</li>
+<li>Transformer-X: 基于Transformer的Seq2Seq模型，该模型相对于原始Transformer模型，在encoder、position encoding、训练方式、loss设计上做了大量改进。</li>
 </ul>
 <hr>
 <ul>
@@ -123,8 +121,7 @@
 
 <hr>
 <p>&nbsp;</p>
-<h3 id="audio-quality">Audio Quality</h3>
-
+<h2 id="Audio-Quality"><a href="#Audio-Quality" class="headerlink" title="Audio Quality"></a>Audio Quality</h2><hr>
 <table>
 
 <thead>
