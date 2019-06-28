@@ -79,25 +79,280 @@
         <div class="posts">
     <article class="post-whole">
         <div class="post-title">
-            <h2 class="title">speech</h2>
+            <h2 class="title">TTS Test Samples</h2>
             <div class="post-meta">
                 <span class="post-time">2019-06-28</span>
+                
+                <span class="post-category">
+                    
+                    <a class="category" href="/categories/Speech/">Speech</a>
+                    
+                </span>
                 
                 <span class="post-visit"> 阅读次数：<span id="busuanzi_value_page_pv"></span></span>
             </div>
         </div>
         <div class="post-toc" id="post-toc">
     <strong class="post-toc-title">目录</strong>
-    
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#audio-quality"><span class="toc-text">Audio Quality</span></a></li></ol>
     <div class="back-to-top" id="back-to-top">
         <a href="javascript:void(0);">回到顶部</a>
     </div>
 </div>
         <div class="post-content">
-            <p><img src="/2019/06/28/speech/image/test.jpg" alt></p>
-<audio controls="controls">
-<source src="wav/tts0000000001.wav">
-</audio>
+            <ul>
+<li><p><strong>数据说明</strong></p>
+<ul>
+<li>训练数据集为8h</li>
+</ul>
+</li>
+<li><p><strong>模型说明：</strong></p>
+<ul>
+<li>DNN：baseline，4层全连接</li>
+<li>Attention+GRU： 一个前馈深度神经网络模型</li>
+<li>Transformer-X: 基于Transformer的Seq2Seq模型，该模型相对于原始Transformer模型，在position encoding、训练方式、loss设计上做了大量改进。</li>
+</ul>
+</li>
+<li><p><strong>所有音频均采用LPC作为vocoder</strong></p>
+</li>
+<li><p><strong>下面合成音频均为实习期间的test samples，且已获得实习单位的许可。</strong><br>&nbsp;</p>
+<h3 id="audio-quality">Audio Quality</h3>
+
+</li>
+</ul>
+<table>
+
+<thead>
+<tr>
+<th style="text-align: center">DNN</th>
+<th style="text-align: center">Attention+GRU</th>
+<th style="text-align: center">Transformer</th>
+</tr>
+</thead>
+
+<p><em>每次自己对着镜头说话的时候，总会做这个动作。</em></p>
+<tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/dnn/0000000001.wav" autoplay></audio></td>
+
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/gru/0000000001.wav" autoplay></audio></td>
+
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/transformer/0000000001.wav" autoplay></audio></td>
+</tr>
+
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">DNN</th>
+<th style="text-align: center">Attention+GRU</th>
+<th style="text-align: center">Transformer</th>
+</tr>
+</thead>
+
+<p><em>“小猪，你怎么了呀?”</em></p>
+<tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/dnn/0000000003.wav" autoplay></audio></td>
+
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/gru/0000000003.wav" autoplay></audio></td>
+
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/transformer/0000000003.wav" autoplay></audio></td>
+</tr>
+
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">DNN</th>
+<th style="text-align: center">Attention+GRU</th>
+<th style="text-align: center">Transformer</th>
+</tr>
+</thead>
+
+<p><em>唉，可以不说话吗？</em></p>
+<tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/dnn/0000000022.wav" autoplay></audio></td>
+
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/gru/0000000022.wav" autoplay></audio></td>
+
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/transformer/0000000022.wav" autoplay></audio></td>
+</tr>
+
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">DNN</th>
+<th style="text-align: center">Attention+GRU</th>
+<th style="text-align: center">Transformer</th>
+</tr>
+</thead>
+
+<p><em>西洛渐渐明白了，准是狐狸他们不敢赢</em></p>
+<tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/dnn/0000000006.wav" autoplay></audio></td>
+
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/gru/0000000006.wav" autoplay></audio></td>
+
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/transformer/0000000006.wav" autoplay></audio></td>
+</tr>
+
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">DNN</th>
+<th style="text-align: center">Attention+GRU</th>
+<th style="text-align: center">Transformer</th>
+</tr>
+</thead>
+
+<p><em>明天会下雨么？出门需要带雨伞么？</em></p>
+<tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/dnn/0000000015.wav" autoplay></audio></td>
+
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/gru/0000000015.wav" autoplay></audio></td>
+
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/transformer/0000000015.wav" autoplay></audio></td>
+</tr>
+
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">DNN</th>
+<th style="text-align: center">Attention+GRU</th>
+<th style="text-align: center">Transformer</th>
+</tr>
+</thead>
+
+<p><em>“妈妈……妈妈……你数了我对你的爱有多少了么?”</em></p>
+<tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/dnn/0000000030.wav" autoplay></audio></td>
+
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/gru/0000000030.wav" autoplay></audio></td>
+
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/transformer/0000000030.wav" autoplay></audio></td>
+</tr>
+
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">DNN</th>
+<th style="text-align: center">Attention+GRU</th>
+<th style="text-align: center">Transformer</th>
+</tr>
+</thead>
+
+<p><em>“小乌龟，快跑啊！狐狸来了！”</em></p>
+<tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/dnn/0000000009.wav" autoplay></audio></td>
+
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/gru/0000000009.wav" autoplay></audio></td>
+
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/transformer/0000000009.wav" autoplay></audio></td>
+</tr>
+
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">DNN</th>
+<th style="text-align: center">Attention+GRU</th>
+<th style="text-align: center">Transformer</th>
+</tr>
+</thead>
+
+<p><em>想把你踢开，天涯之外，又怕鞋弄坏。</em></p>
+<tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/dnn/0000000008.wav" autoplay></audio></td>
+
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/gru/0000000008.wav" autoplay></audio></td>
+
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/transformer/0000000008.wav" autoplay></audio></td>
+</tr>
+
+</tbody>
+</table>
+
+
+
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">DNN</th>
+<th style="text-align: center">Attention+GRU</th>
+<th style="text-align: center">Transformer</th>
+</tr>
+</thead>
+
+<p><em>在长期的科研实践中，该所上下深刻感到，走军民融合科研之路，是提高科研对战斗力贡献率的重要途径。</em></p>
+<tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/dnn/0000000036.wav" autoplay></audio></td>
+
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/gru/0000000036.wav" autoplay></audio></td>
+
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/transformer/0000000036.wav" autoplay></audio></td>
+</tr>
+
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">DNN</th>
+<th style="text-align: center">Attention+GRU</th>
+<th style="text-align: center">Transformer</th>
+</tr>
+</thead>
+
+<p><em>陈凤英说，这真真切切地表明，中国实实在在地在“做”，不仅提出观点，更落实到具体行动上，从理念到行动具有高度一致性。</em></p>
+<tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/dnn/0000000004.wav" autoplay></audio></td>
+
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/gru/0000000004.wav" autoplay></audio></td>
+
+<td style="text-align: center"><audio controls="controls"><source src="/2019/06/28/speech/wav/transformer/0000000004.wav" autoplay></audio></td>
+</tr>
+
+</tbody>
+</table>
+        </div>
+        
+        <div class="post-tag">
+            
+            <a class="tag" href="/tags/TTS/" title="TTS">TTS</a>
+            
         </div>
         
     </article>
