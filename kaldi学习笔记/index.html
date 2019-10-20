@@ -77,18 +77,24 @@
 <div class="main">
     <div class="content-inner">
         <div class="posts">
-    
-        <article class="post-abstract">
-            <div class="post-title">
-                <h2><a class="post-title-link" href="/kaldi学习笔记/">kaldi学习笔记第一节(kaldi安装yesno shell脚本详解)</a></h2>
-            </div>
+    <article class="post-whole">
+        <div class="post-title">
+            <h2 class="title">kaldi学习笔记第一节(kaldi安装yesno shell脚本详解)</h2>
             <div class="post-meta">
                 <span class="post-time">2019-10-20</span>
                 
+                <span class="post-visit"> 阅读次数：<span id="busuanzi_value_page_pv"></span></span>
             </div>
-            <div class="post-content">
-                
-                    <ul>
+        </div>
+        <div class="post-toc" id="post-toc">
+    <strong class="post-toc-title">目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一、-安装"><span class="toc-text">一、 安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、-yesno实例详解"><span class="toc-text">二、 yesno实例详解</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、运行方式"><span class="toc-text">1、运行方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、shell脚本详解"><span class="toc-text">2、shell脚本详解</span></a></li></ol></li></ol>
+    <div class="back-to-top" id="back-to-top">
+        <a href="javascript:void(0);">回到顶部</a>
+    </div>
+</div>
+        <div class="post-content">
+            <ul>
 <li>kaldi学习资料<ul>
 <li><a href="https://shichaog1.gitbooks.io/hand-book-of-speech-enhancement-and-recognition/content/chapter29.html" target="_blank" rel="noopener">语音增强与识别–必读书籍</a></li>
 <li><a href="http://www.voidcn.com/article/p-ypfoyevn-bsb.html" target="_blank" rel="noopener">kaldi使用训练好的模型做语音识别</a></li>
@@ -336,10 +342,15 @@ exp/mono0a/graph_tgpr data/test_yesno exp/mono0a/decode_test_yesno
 
 # 查看结果
 for x in exp/*/decode*; do [ -d $x ] &amp;&amp; grep WER $x/wer_* | utils/best_wer.sh; done</code></pre>
-                
-            </div>
-        </article>
-    
+        </div>
+        
+        <div class="post-tag">
+            
+            <a class="tag" href="/tags/kaldi/" title="kaldi">kaldi</a>
+            
+        </div>
+        
+    </article>
 </div>
 <div class="paginator">
     
@@ -347,7 +358,7 @@ for x in exp/*/decode*; do [ -d $x ] &amp;&amp; grep WER $x/wer_* | utils/best_w
         
     
 </div>
-
+<div id="comment-container"></div>
     </div>
 </div>
 <footer class="footer-social">
