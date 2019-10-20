@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>逝者如斯夫</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_859455_eaq7v6w8ktj.css">
+</head>
+<body>
+<header class="header">
+    <div class="header-inner">
+        <div class="header-title">
+
+        </div>
+        <nav class="header-nav">
+            
+            <a href="/" class="header-nav-link" >
+                首页
+            </a>
+            
+
+            
+            <a href="/archives" class="header-nav-link">
+                归档
+            </a>
+            
+
+            
+            <a href="/tags" class="header-nav-link">
+                标签
+            </a>
+            
+
+            
+            <a href="/about/" class="header-nav-link">
+                关于
+            </a>
+            
+        </nav>
+    </div>
+</header>
+<header class="mobile-header">
+    <div class="mobile-nav">
+        <div class="mobile-nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="mobile-nav-title">
+            <a href="/" class="mobile-nav-title-link">kangcp's Blog</a>
+        </div>
+
+    </div>
+    <nav class="mobile-menu">
+        <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-home"></i>
+                <a href="/" class="mobile-nav-link">首页</a>
+            </li>
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-archive"></i>
+                <a href="/archives" class="mobile-nav-link">归档</a>
+            </li>
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-tag"></i>
+                <a href="/tags" class="mobile-nav-link">标签</a>
+            </li>
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-about"></i>
+                <a href="/about/" class="mobile-nav-link">关于</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="main">
+    <div class="content-inner">
+        <div class="posts">
+    <article class="post-whole">
+        <div class="post-title">
+            <h2 class="title">kaldi学习笔记第一节(kaldi安装yesno shell脚本详解)</h2>
+            <div class="post-meta">
+                <span class="post-time">2019-10-20</span>
+                
+                <span class="post-visit"> 阅读次数：<span id="busuanzi_value_page_pv"></span></span>
+            </div>
+        </div>
+        <div class="post-toc" id="post-toc">
+    <strong class="post-toc-title">目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一、-安装"><span class="toc-text">一、 安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、-yesno实例详解"><span class="toc-text">二、 yesno实例详解</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、运行方式"><span class="toc-text">1、运行方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、shell脚本详解"><span class="toc-text">2、shell脚本详解</span></a></li></ol></li></ol>
+    <div class="back-to-top" id="back-to-top">
+        <a href="javascript:void(0);">回到顶部</a>
+    </div>
+</div>
+        <div class="post-content">
+            <ul>
+<li>kaldi学习资料<ul>
+<li><a href="https://shichaog1.gitbooks.io/hand-book-of-speech-enhancement-and-recognition/content/chapter29.html" target="_blank" rel="noopener">语音增强与识别–必读书籍</a></li>
+<li><a href="http://www.voidcn.com/article/p-ypfoyevn-bsb.html" target="_blank" rel="noopener">kaldi使用训练好的模型做语音识别</a></li>
+</ul>
+</li>
+</ul>
+<a id="more"></a>
+
+<h1 id="一、-安装"><a href="#一、-安装" class="headerlink" title="一、 安装"></a>一、 安装</h1><p><font color="red">* 参考<a href="https://github.com/kaldi-asr/kaldi" target="_blank" rel="noopener">kaldi</a>官方文件来就好了。</font></p>
+<ul>
+<li><strong>注意点是make需要4G以上的内存，因此最好在服务器上安装好。</strong></li>
+</ul>
+<h1 id="二、-yesno实例详解"><a href="#二、-yesno实例详解" class="headerlink" title="二、 yesno实例详解"></a>二、 yesno实例详解</h1><ul>
+<li><a href="https://www.cnblogs.com/welen/p/7485151.html" target="_blank" rel="noopener">yesno孤立词识别kaldi脚本</a></li>
+<li><a href="https://blog.csdn.net/u011930705/article/details/81737937" target="_blank" rel="noopener">从yesno模型入门kaldi语音识别</a></li>
+<li><a href="https://blog.csdn.net/shichaog/article/details/73264152?locationNum=9&fps=1" target="_blank" rel="noopener">kaldi yesno example</a></li>
+<li><a href="https://www.jianshu.com/p/04cc8aad2b83" target="_blank" rel="noopener">[Kaldi] 孤立词识别(yesno)(一)</a></li>
+</ul>
+<h2 id="1、运行方式"><a href="#1、运行方式" class="headerlink" title="1、运行方式"></a>1、运行方式</h2><ul>
+<li>执行./run.sh即可，不过在此之前，需要把kaldi/tools/env.sh添加到kaldi/tools/extras/下面，因为在yesno/s5/path.sh指定得env.sh是指定在这个位置。</li>
+</ul>
+<h2 id="2、shell脚本详解"><a href="#2、shell脚本详解" class="headerlink" title="2、shell脚本详解"></a>2、shell脚本详解</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 指定机器运作方式，这里是本地多任务处理工作方式，而不是gpu</span></span><br><span class="line"><span class="comment"># 这个文件有perl编写，可以设置核心数等参数</span></span><br><span class="line">train_cmd=<span class="string">"utils/run.pl"</span></span><br><span class="line">decode_cmd=<span class="string">"utils/run.pl"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载数据集并解压</span></span><br><span class="line"><span class="keyword">if</span> [ ! -d waves_yesno ]; <span class="keyword">then</span></span><br><span class="line">  wget http://www.openslr.org/resources/1/waves_yesno.tar.gz || <span class="built_in">exit</span> 1;</span><br><span class="line">  <span class="comment"># was:</span></span><br><span class="line">  <span class="comment"># wget http://sourceforge.net/projects/kaldi/files/waves_yesno.tar.gz || exit 1;</span></span><br><span class="line">  tar -xvzf waves_yesno.tar.gz || <span class="built_in">exit</span> 1;</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 解压后waves_yesno内容如下:</span></span><br><span class="line">:&lt;&lt;$$</span><br><span class="line">0_0_0_0_1_1_1_1.wav 等等</span><br><span class="line">总共60个文件，采样率8k，wav文件中0代表读no，1代表读yes，每个文件中有8个发音</span><br><span class="line">$$</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 确定训练语料和测试语料（在data目录下）</span></span><br><span class="line">train_yesno=train_yesno</span><br><span class="line">test_base_name=test_yesno</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除已有的数据，重新开始</span></span><br><span class="line">rm -rf data exp mfcc</span><br><span class="line"></span><br><span class="line"><span class="comment"># Data preparation</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">local</span>/prepare_data.sh waves_yesno</span><br><span class="line"><span class="comment"># 内部实现代码：</span></span><br><span class="line">:&lt;&lt;$$</span><br><span class="line"></span><br><span class="line">1、这个脚本先根据传入的wav文件目录，创建了waves_all.list，保存了所有waves名字</span><br><span class="line">2、然后根据list，划分测试机和训练集，生成了waves.test 和 waves.train</span><br><span class="line">	(注意，wav文件是不用动的，只需要把文件名写入到waves.test和waves.train中即可)</span><br><span class="line">3、创建scp文件，scp文件保存了发音id和文件路径</span><br><span class="line">4、创建txt文件，txt文件会把发音id转化为标签(yes no)</span><br><span class="line">5、然后把上去再<span class="built_in">local</span>文件下生成的文件，转到对应的train和<span class="built_in">test</span>文件下，并生成utt2spk、spk2utt。</span><br><span class="line">	（这两个文件都记录文件与说话人的关系）</span><br><span class="line">	<span class="comment">#!/bin/bash</span></span><br><span class="line">	<span class="comment"># 谁调用当前脚本，那么文件夹就在调用者的目录下为相对目录</span></span><br><span class="line">	<span class="comment"># 虽然当前.sh文件在local下，但是调用着run.sh在s5/目录下，</span></span><br><span class="line">	<span class="comment"># 所以data/local在s5下面</span></span><br><span class="line">	mkdir -p data/<span class="built_in">local</span></span><br><span class="line">	<span class="built_in">local</span>=`<span class="built_in">pwd</span>`/<span class="built_in">local</span></span><br><span class="line">	scripts=`<span class="built_in">pwd</span>`/scripts</span><br><span class="line">	</span><br><span class="line">	<span class="comment"># 导入语言模型需要的执行文件</span></span><br><span class="line">	<span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:`<span class="built_in">pwd</span>`/../../../tools/irstlm/bin</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">echo</span> <span class="string">"Preparing train and test data"</span></span><br><span class="line">	</span><br><span class="line">	<span class="comment"># 创建训练和测试文件夹</span></span><br><span class="line">	train_base_name=train_yesno</span><br><span class="line">	test_base_name=test_yesno</span><br><span class="line">	<span class="comment"># 传进来的是waves_yesno目录</span></span><br><span class="line">	waves_dir=<span class="variable">$1</span></span><br><span class="line">	</span><br><span class="line">	<span class="comment"># -1是把waves_dir目录下的文件按行显示（去掉各种/n,/r等）</span></span><br><span class="line">	<span class="comment"># waves_all.list 为wav下所有wav的名字列表</span></span><br><span class="line">	ls -1 <span class="variable">$waves_dir</span> &gt; data/<span class="built_in">local</span>/waves_all.list</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">cd</span> data/<span class="built_in">local</span></span><br><span class="line">	</span><br><span class="line">	<span class="comment"># 创建test和train文件，后两个文件为输出文件，测试和训练各30个文件</span></span><br><span class="line">	../../<span class="built_in">local</span>/create_yesno_waves_test_train.pl waves_all.list   waves.test waves.train</span><br><span class="line">	</span><br><span class="line">	<span class="comment"># 创建scp文件，scp文件保存了</span></span><br><span class="line">	<span class="comment"># 0_0_0_0_1_1_1_1 waves_yesno/0_0_0_0_1_1_1_1.wav </span></span><br><span class="line">	<span class="comment"># 发音id和文件位置</span></span><br><span class="line">	../../<span class="built_in">local</span>/create_yesno_wav_scp.pl <span class="variable">$&#123;waves_dir&#125;</span> waves.test &gt; <span class="variable">$&#123;test_base_name&#125;</span>_wav.scp</span><br><span class="line">	../../<span class="built_in">local</span>/create_yesno_wav_scp.pl <span class="variable">$&#123;waves_dir&#125;</span> waves.trai  n &gt; <span class="variable">$&#123;train_base_name&#125;</span>_wav.scp</span><br><span class="line">	</span><br><span class="line">	<span class="comment"># 创建txt文件，把发音id转化为YES和NO</span></span><br><span class="line">	<span class="comment"># 0_0_0_0_1_1_1_1 NO NO NO NO YES YES YES YES</span></span><br><span class="line">	</span><br><span class="line">	../../<span class="built_in">local</span>/create_yesno_txt.pl waves.test &gt; <span class="variable">$&#123;test_base_name&#125;</span>.txt</span><br><span class="line">	../../<span class="built_in">local</span>/create_yesno_txt.pl waves.train &gt; <span class="variable">$&#123;train_base_name&#125;</span>.txt</span><br><span class="line">	</span><br><span class="line">	cp ../../input/task.arpabo lm_tg.arpa</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">cd</span> ../..</span><br><span class="line">	</span><br><span class="line">	<span class="comment"># This stage was copied from WSJ example</span></span><br><span class="line">	<span class="keyword">for</span> x <span class="keyword">in</span> train_yesno test_yesno; <span class="keyword">do</span></span><br><span class="line">	  mkdir -p data/<span class="variable">$x</span></span><br><span class="line">	  cp data/<span class="built_in">local</span>/<span class="variable">$&#123;x&#125;</span>_wav.scp data/<span class="variable">$x</span>/wav.scp</span><br><span class="line">	  cp data/<span class="built_in">local</span>/<span class="variable">$x</span>.txt data/<span class="variable">$x</span>/text</span><br><span class="line">	 <span class="comment"># 把text中第一列发音id作为第一列，说话人为global </span></span><br><span class="line">	  cat data/<span class="variable">$x</span>/text | awk <span class="string">'&#123;printf("%s global\n", $1);&#125;'</span> &gt; data/<span class="variable">$x</span>/utt2spk</span><br><span class="line">	 <span class="comment"># 输入utt2spk文件，输出每个人说了的话，这里只有一个global说的，所以只有一行</span></span><br><span class="line">	  utils/utt2spk_to_spk2utt.pl &lt;data/<span class="variable">$x</span>/utt2spk &gt;data/<span class="variable">$x</span>/spk2utt</span><br><span class="line">	<span class="keyword">done</span></span><br><span class="line">	</span><br><span class="line"><span class="comment"># 此外可能还会有以下文件：</span></span><br><span class="line">	segments: 包括每个录音的发音分段/对齐信息（只有在一个文件包括多个发音时需要）</span><br><span class="line">	reco2file_and_channel 双声道录音情况下使用到</span><br><span class="line">	Spk2gender: 说话人和性别建立联系，用于声道长度归一化</span><br><span class="line">	</span><br><span class="line"><span class="comment"># 文件目录：</span></span><br><span class="line">	data/train_yesno/</span><br><span class="line">	data/test_yesno/</span><br><span class="line">	目录结构如下:</span><br><span class="line">	data</span><br><span class="line">	├───train_yesno   训练文件夹</span><br><span class="line">	│   ├───text      (发音id 发音文本)</span><br><span class="line">	│   ├───utt2spk   (发音id 发音人)</span><br><span class="line">	│   ├───spk2utt   (发音人 发音id)</span><br><span class="line">	│   └───wav.scp   (发音id 发音文件)</span><br><span class="line">	└───test_yesno</span><br><span class="line">	    ├───text</span><br><span class="line">	    ├───utt2spk</span><br><span class="line">	    ├───spk2utt</span><br><span class="line">	    └───wav.scp</span><br><span class="line">	</span><br><span class="line">$$</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">local</span>/prepare_dict.sh</span><br><span class="line">:&lt;&lt;$$</span><br><span class="line"></span><br><span class="line">该文件生成的五个文件</span><br><span class="line">lexicon.txt，完整的词位-发音对（所有，包括SIL）</span><br><span class="line">lexicon_words.txt，单词-发音对</span><br><span class="line">silence_phones.txt， SIL发音</span><br><span class="line">nonsilence_phones.txt，语言学发音</span><br><span class="line">optional_silence.txt ，备选SIL发音</span><br><span class="line"></span><br><span class="line">	<span class="comment">#!/bin/bash</span></span><br><span class="line">	</span><br><span class="line">	mkdir -p data/<span class="built_in">local</span>/dict</span><br><span class="line">	</span><br><span class="line">	<span class="comment"># 报none-silence写入到lexicon_words中</span></span><br><span class="line">	<span class="comment"># 这里例子只有yes和no，假设yes和no分别只有一个发音Y和N</span></span><br><span class="line">	cp input/lexicon_nosil.txt data/<span class="built_in">local</span>/dict/lexicon_words.txt</span><br><span class="line">	</span><br><span class="line">	<span class="comment"># 将所有发音写入到lexicon中，包括silence的发音</span></span><br><span class="line">	<span class="comment"># 这个例子中的silence只有SIL</span></span><br><span class="line">	cp input/lexicon.txt data/<span class="built_in">local</span>/dict/lexicon.txt</span><br><span class="line">	</span><br><span class="line">	<span class="comment"># 本例中phone只有Y、N、SIL三个，</span></span><br><span class="line">	<span class="comment"># grep -v反向选择，只选择非silence的phone</span></span><br><span class="line">	</span><br><span class="line">	cat input/phones.txt | grep -v SIL &gt; data/<span class="built_in">local</span>/dict/nonsilence_phones.txt</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">echo</span> <span class="string">"SIL"</span> &gt; data/<span class="built_in">local</span>/dict/silence_phones.txt</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">echo</span> <span class="string">"SIL"</span> &gt; data/<span class="built_in">local</span>/dict/optional_silence.txt</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">echo</span> <span class="string">"Dictionary preparation succeeded"</span></span><br><span class="line">	</span><br><span class="line">$$</span><br><span class="line"></span><br><span class="line"><span class="comment"># 把字典生成kaldi能够接收的数据结构FST(finit state transducer)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># utils/prepare_lang.sh --position-dependent-phones false &lt;RAW_DICT_PATH&gt; &lt;OOV&gt; &lt;TEMP_DIR&gt; &lt;OUTPUT_DIR&gt;</span></span><br><span class="line"><span class="comment"># OOV存放的是词汇表以外的词，这里就是静音词（非语言学发声意义的词）</span></span><br><span class="line"></span><br><span class="line">utils/prepare_lang.sh --position-dependent-phones <span class="literal">false</span> data/<span class="built_in">local</span>/dict <span class="string">"&lt;SIL&gt;"</span> data/<span class="built_in">local</span>/lang data/lang</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成的.fst是二进制文件，可以使用下面命令查看：</span></span><br><span class="line">tools/openfst-1.6.2/bin/fstprint --isymbols=data/lang/phones.txt --osymbols=data/lang/words.txt data/lang/L.fst</span><br><span class="line"></span><br><span class="line"><span class="comment"># 准备语言模型</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 这里使用的是一元文法语言模型，同样要转换成FST以便kaldi接受。该语言模型原始文件是data/local/lm_tg.arpa，生成好的FST格式的。是字符串和整型值之间的映射关系，kaldi里使用整型值。</span></span><br><span class="line">（语言模型这里后面学习的时候再深入了解）</span><br><span class="line"><span class="built_in">local</span>/prepare_lm.sh</span><br><span class="line"><span class="comment"># 语言模型再data/lang_test_tg下面</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 特征抽取</span></span><br><span class="line"><span class="comment"># 主要是提取出MFCC</span></span><br><span class="line">:&lt;&lt;$$</span><br><span class="line">	steps/make_mfcc.sh --nj &lt;N&gt; &lt;DATA_DIR&gt; &lt;LOG_DIR&gt; &lt;MFCC_DIR&gt; </span><br><span class="line">--nj &lt;N&gt;是处理器单元数</span><br><span class="line">&lt;DATA_DIR&gt;训练语料所在目录</span><br><span class="line">&lt;LOG_DIR&gt;这个目录下记录了make_mfcc的执行<span class="built_in">log</span></span><br><span class="line">&lt;MFCC_DIR&gt;是mfcc特征输出目录</span><br><span class="line">	</span><br><span class="line">生成的文件包括：</span><br><span class="line">cmvn_test_yesno.ark   raw_mfcc_test_yesno.1.ark</span><br><span class="line">cmvn_test_yesno.scp   raw_mfcc_test_yesno.1.scp</span><br><span class="line">cmvn_train_yesno.ark  raw_mfcc_train_yesno.1.ark</span><br><span class="line">cmvn_train_yesno.scp  raw_mfcc_train_yesno.1.scp</span><br><span class="line"></span><br><span class="line">其中scp是发音id和绝对路径  帧数*13</span><br><span class="line">cmvn是归一化倒谱系数，包括能量和一阶差分和二阶差分，共计40维</span><br><span class="line">13*3+1（能量）=40</span><br><span class="line"></span><br><span class="line">查看ark的数据，可以使用如下命令：</span><br><span class="line">/home/kcpu/kaldi/src/featbin/copy-feats ark:raw_mfcc_train_yesno.1.ark ark,t:-</span><br><span class="line">$$</span><br><span class="line"></span><br><span class="line"><span class="comment"># Feature extraction</span></span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> train_yesno test_yesno; <span class="keyword">do</span></span><br><span class="line"> steps/make_mfcc.sh --nj 1 data/<span class="variable">$x</span> exp/make_mfcc/<span class="variable">$x</span> mfcc</span><br><span class="line"> <span class="comment"># 归一化倒谱系数</span></span><br><span class="line"> steps/compute_cmvn_stats.sh data/<span class="variable">$x</span> exp/make_mfcc/<span class="variable">$x</span> mfcc</span><br><span class="line"> utils/fix_data_dir.sh data/<span class="variable">$x</span></span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Mono training  （单音节训练）</span></span><br><span class="line"><span class="comment"># 这里将生成语言模型的FST，可以使用下面的命令查看输出：</span></span><br><span class="line"><span class="comment">#  fstcopy 'ark:gunzip -c exp/mono0a/fsts.1.gz|' ark,t:- | head -n 20</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/kaldi学习笔记第一节/p1.png" alt="p1"> </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 每一列的含义为：(Q-from, Q-to, S-in, S-out, Cost)</span></span><br><span class="line"></span><br><span class="line">steps/train_mono.sh --nj 1 --cmd <span class="string">"<span class="variable">$train_cmd</span>"</span> \</span><br><span class="line">  --totgauss 400 \</span><br><span class="line">  data/train_yesno data/lang exp/mono0a</span><br><span class="line"></span><br><span class="line"><span class="comment"># 图解码</span></span><br><span class="line"><span class="comment"># Graph compilation</span></span><br><span class="line">utils/mkgraph.sh data/lang_test_tg exp/mono0a exp/mono0a/graph_tgpr</span><br><span class="line"></span><br><span class="line"><span class="comment"># 解码测试</span></span><br><span class="line"><span class="comment"># 这将会生成lat.1.gz，该文件包括发音格。exp/mono/decode_test_yesno/wer_X并且也计算了词错误率。exp/mono/decode_test_yesno/scoring/X.tra是文本。X是语言模型权重LMWT。当然也可以在调用score.sh添加参数--min_lmwt 和 --max_lmwt进行修改。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Decoding</span></span><br><span class="line">steps/decode.sh --nj 1 --cmd <span class="string">"<span class="variable">$decode_cmd</span>"</span> \</span><br><span class="line">exp/mono0a/graph_tgpr data/test_yesno exp/mono0a/decode_test_yesno</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看结果</span></span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> exp/*/decode*; <span class="keyword">do</span> [ -d <span class="variable">$x</span> ] &amp;&amp; grep WER <span class="variable">$x</span>/wer_* | utils/best_wer.sh; <span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+
+
+        </div>
+        
+        <div class="post-tag">
+            
+            <a class="tag" href="/tags/kaldi/" title="kaldi">kaldi</a>
+            
+        </div>
+        
+    </article>
+</div>
+<div class="paginator">
+    
+        
+            <a class="prev" href="/kaldi学习笔记第二节/">
+                <i class="iconfont icon-prev"></i>
+                <span class="nav-default">kaldi学习笔记第二节</span>
+                <span class="nav-mobile">上一篇</span>
+            </a>
+        
+        
+    
+</div>
+<div id="comment-container"></div>
+    </div>
+</div>
+<footer class="footer-social">
+    
+
+    
+
+    
+
+    <div class="footer-copyright">
+        <p class="time-line">
+            &copy;
+            
+            
+                2018 -
+            
+            2019
+            &nbsp;<i class="iconfont icon-heart"></i>&nbsp;
+            <a target="_blank" href="https://github.com/iJinxin">kangcp</a>
+        </p>
+        <p class="theme-info">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme -
+            <a target="_blank" href="https://github.com/iJinxin/hexo-theme-sky">Sky</a>
+        </p>
+    </div>
+</footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    
+
+</script>
+</html>
